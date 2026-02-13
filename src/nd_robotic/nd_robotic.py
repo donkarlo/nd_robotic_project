@@ -1,0 +1,2 @@
+class Robotic:
+    pass

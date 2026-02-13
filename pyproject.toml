@@ -1,12 +1,12 @@
 [project.scripts]
-robotix = "robotix.__main__:main"
+robotix = "nd_robotic.__main__:main"
 
 [build-system]
 requires = ["setuptools>=64", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "robotix"
+name = "nd_robotic"
 version = "1.0.0"
 dependencies = [
     "ruamel.yaml>=0.17.40,<0.18",
@@ -37,7 +37,7 @@ namespace_packages = true
 explicit_package_bases = true
 
 # only check these
-files = ["robotix", "tests"]
+files = ["nd_robotic", "tests"]
 
 # exclude pytest conftest files
 exclude = '(^|/)conftest\.py$'

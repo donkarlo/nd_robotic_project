@@ -1,0 +1,2 @@
+class FromActionPotentialGroupFormattedData:
+    pass

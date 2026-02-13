@@ -1,9 +1,0 @@
-from robotix.structure.kind.mind.learning.learning import Learning
-
-
-class SingleLoop(Learning):
-    """
-    - This link contains also single loop
-        - https://en.wikipedia.org/wiki/Double-loop_learning
-    """
-    pass

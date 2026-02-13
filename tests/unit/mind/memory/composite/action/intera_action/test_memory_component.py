@@ -1,11 +1,11 @@
-from robotix.structure.kind.mind.process.kind.memory.composite.trace.group.decorator.storaged import Storaged
-from robotix.structure.kind.mind.process.kind.memory.composite.trace.group.group import Group as TraceGroup
-from robotix.structure.kind.mind.process.kind.memory.composite.trace.group.kind.gaussianed_quaternion_kinematic.gaussianed_quaternion_kinematic import \
+from nd_robotic.robot.robot import Storaged
+from nd_robotic.robot.structure.kind.mind.cognition.process.kind.memory.composite.trace.group.group import Group as TraceGroup
+from nd_robotic.robot.robot import \
     GaussianedQuaternionKinematic
-from utilix.data.storage.decorator.multi_valued.multi_valued import MultiValued
-from utilix.data.storage.kind.file.pkl.pkl import Pkl
-from utilix.os.file_system.file.file import File as OsFile
-from utilix.os.file_system.path.file import File as FilePath
+from nd_utility.data.storage.decorator.multi_valued.multi_valued import MultiValued
+from nd_utility.data.storage.kind.file.pkl.pkl import Pkl
+from nd_utility.os.file_system.file.file import File as OsFile
+from nd_utility.os.file_system.path.file import File as FilePath
 
 
 class TestInteraction:

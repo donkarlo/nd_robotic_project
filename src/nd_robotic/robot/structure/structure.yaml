@@ -1,0 +1,22 @@
+structure:
+  mind:
+    memory:
+      explicit:
+        long_term:
+          episodic: {}
+          semantic: {}
+        working: {}
+      implicit:
+        skills: {}
+        repetition_priming:
+          sequence_to_sequence_models:
+            time_series:
+              architecture: {}
+              training:
+                config: {}
+  body:
+    sensor: {}
+    nervous_system:
+      cpu: {}
+      circuit: {}
+    actuators: {}

@@ -1,5 +1,5 @@
-from robotix.robot import Robot
-from robotix.structure.kind.body.sensor.kind.group.group import Group
+from nd_robotic.robot.robot import Robot
+from nd_robotic.robot.robot import Group
 class TestRobot:
     def test__init__(self, sensor_set:Group)->None:
         robot = Robot()

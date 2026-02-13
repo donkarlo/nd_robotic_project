@@ -1,9 +1,0 @@
-from robotix.platform.ros.message.message import Message
-from typing import Protocol
-from utilix.data.kind.dic.dic import Dic
-
-
-class Component(Protocol):
-    def init_from_dic_message(self, dic: Dic) -> "Message": ...
-    def get_fields(self)->List[Field]: ...
-    def convert_to_dic(self)->Dic: ...

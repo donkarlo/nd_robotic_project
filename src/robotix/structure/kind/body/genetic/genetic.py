@@ -1,2 +1,0 @@
-class Genetic:
-    pass

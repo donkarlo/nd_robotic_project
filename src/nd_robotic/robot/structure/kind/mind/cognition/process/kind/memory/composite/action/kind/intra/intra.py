@@ -1,0 +1,2 @@
+class Intera:
+    pass
