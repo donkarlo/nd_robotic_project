@@ -36,12 +36,12 @@ class BuildingSingleModalityForcastingModels(SupriseReducingAction):
         SupriseReducingAction.__init__(self, goal)
 
     def build_forcasting_modalities(self)->None:
-        episodes = Robot().get_event_specific_knowledge_episodes()
+        esps = Robot().get_event_specific_knowledge_episodes()
         forcasting_model_architecture = Robot().get_priming_forcasting_event
         forcasting_model_configs = Robot().get_priming_forcasting_models_training_configs()
 
-        for episode in episodes:
-            mixed_traces = episode.get_trace_group().get_members()
+        for esp in esps:
+            mixed_traces = esp.get_trace_group().get_members()
             episode_modalities = mixed_traces.get_children()
 
             # here we are at either GPS or LIDAR (this can happen to a segregatable data)
