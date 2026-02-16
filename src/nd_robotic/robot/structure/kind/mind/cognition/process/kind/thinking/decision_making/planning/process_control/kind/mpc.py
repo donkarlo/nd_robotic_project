@@ -1,0 +1,2 @@
+class Mpc:
+    pass

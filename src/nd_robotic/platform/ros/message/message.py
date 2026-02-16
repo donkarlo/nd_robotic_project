@@ -6,7 +6,7 @@ from nd_utility.data.kind.dic.dic import Dic
 
 class Message(ABC):
     """
-    This is the leaf of the composite.
+    This is the inner_experiment of the composite.
     - Message in ros can be formed of nested messages.
     """
     def __init__(self, fields:List[Field] = []):

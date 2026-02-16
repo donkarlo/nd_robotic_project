@@ -10,4 +10,4 @@ sensor:
     human:
       command:
         remeber:
-          - "event_specific_knowledge"
+          - "event_specific_knowledge_forcasting_model_config"

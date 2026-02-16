@@ -2,7 +2,7 @@ class Explicit:
     """
     Or it is called concious memory
     - all forms of explicit memory are
-        associated with conscious event_specific_knowledge/awareness of the previously
+        associated with conscious event_specific_knowledge_forcasting_model_config/awareness of the previously
         experienced information
 
     TODO: check Autobgraphic

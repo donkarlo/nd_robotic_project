@@ -1,0 +1,2 @@
+class MultiModal:
+    pass

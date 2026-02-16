@@ -17,7 +17,7 @@ class Factory:
             -14.5 15 5
             -14 15 5
 
-        LearnedParameter:
+        LearnedParameters:
             sample_action: An example GoalGain object (used to infer GoalGain and Vec types)
             vecs_file_path: Path to the file containing vector action_potential_group
             vec_sep: Separator between vectors (default newline)

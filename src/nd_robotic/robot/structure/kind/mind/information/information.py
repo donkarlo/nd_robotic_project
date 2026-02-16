@@ -9,7 +9,7 @@ class information():
             episodic: is tails
             information: is 0 if head is 1
     - information is action_potential_group inside a transformer_model and context
-    - information is meaningful in a feedback, control system
+    - information is meaningful in a feedback, process_control system
     - information is a representation of a reality
     """
     def __init__(self, representation, mappers:List[Mapper]):

@@ -9,7 +9,7 @@ from nd_physics.world.world import World
 
 class Scenario(BaseScenario):
     """
-    Scenario is more than a robot and its missions
+    Experiment is more than a robot and its missions
     For ecxample it might include the world mission_state such as walls
     """
 

@@ -1,3 +1,4 @@
-class ClassName():
-    def __init__(self):
-        super().__init__()
+class Composite:
+    @abstractmethod
+    def memorize(self)->None:
+        pass

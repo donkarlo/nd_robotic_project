@@ -6,12 +6,12 @@ from nd_robotic_group_project.experiment.scenario import Scenario
 
 class Experiment:
     """
-    We know in a robotic experiment a robot tries to achieve a initial_mission
+    We know in a robotic inner_experiment a robot tries to achieve a initial_mission
     """
 
     class Experiment(ABC):
         """
-        We know in a robotic experiment a robot tries to achieve a initial_mission
+        We know in a robotic inner_experiment a robot tries to achieve a initial_mission
         """
 
         def __init__(self, learning_scenarios: List[Scenario], testing_scenarios: List[Scenario]) -> None:

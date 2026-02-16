@@ -245,7 +245,7 @@ class TopicFrequencyFinder:
 # ---------- PublisherExample usage ----------
 if __name__ == "__main__":
     # PublisherExample 1: YAML dump (recommended for Python 3.13)
-    yaml_path = "/home/donkarlo/Dropbox/projs/research/data/self-aware-drones/ctumrs/two-drones/normal-scenario/uav1-gps-lidar-uav2-gps-lidar.schema.yaml"
+    yaml_path = "/home/donkarlo/Dropbox/projs/research/data/self-aware-drones/ctumrs/two-drones/normal-inner_experiment/uav1-gps-lidar-uav2-gps-lidar.schema.yaml"
     bag1 = TopicFrequencyFinder(yaml_path)
     stats1 = bag1.stats()
     print(f"{'topic':30s} {'count':>10s} {'t_min':>14s} {'t_max':>14s} {'freq_avg(Hz)':>14s}")

@@ -66,7 +66,7 @@ class Robot(ABC):
 
     def attach_goal(self, parent_goal: CompositeGoal, goal: ComponentGoal) -> None:
         """
-        We can just attach goals and not actions. Planner in mind>process>thinking>decision making  makes a composite action
+        We can just attach goals and not actions. Planning in mind>process>thinking>decision making  makes a composite action
         Args:
             parent_goal:
             goal:
@@ -80,14 +80,14 @@ class Robot(ABC):
         ...
 
     def __run(self):
-        from nd_robotic.robot.structure.kind.mind.cognition.process.kind.thinking.decision_making.planning.planner.planner import \
-            Planner
+        from nd_robotic.robot.structure.kind.mind.cognition.process.kind.thinking.decision_making.planning.planning import \
+            Planning
 
         # All goals must be attached to this one so that teh robot decides the priority between them
         suprise_poise_goal = SuprisePoise()
 
         self._composite_goal = CompositeGoal(suprise_poise_goal, None)
-        planner = Planner(self._composite_goal)
+        planner = Planning(self._composite_goal)
         self._composite_action = planner.get_composite_action()
 
         self._composite_action.run()

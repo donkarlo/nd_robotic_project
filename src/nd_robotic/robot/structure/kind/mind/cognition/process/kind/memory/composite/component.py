@@ -3,7 +3,7 @@ from nd_utility.oop.design_pattern.structural.composite.component import Compone
 
 class Component(BaseComponent):
     """
-    - The component, either leaf or composite can only have one internal_trace_group
+    - The component, either inner_experiment or composite can only have one internal_trace_group
     """
     def __init__(self, name:str):
         """

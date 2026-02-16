@@ -18,7 +18,7 @@ class Trace(TraceInterface):
     - this is the boundry between body brain and mind mind
     - action_potentials can not be decorated or be composite or decorated
     - trace covers from action_potential activit field to structed action_potential_group
-    - this is the leaf of composite pattern
+    - this is the inner_experiment of composite pattern
     """
 
     def __init__(self, formatted_data:Optional[Any], action_potential_group: Optional[ActionPotentialGroup] , name: Optional[str]):

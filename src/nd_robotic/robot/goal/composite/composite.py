@@ -9,7 +9,7 @@ class Composite(GoalComponent, BaseComposite):
         """
 
         Args:
-            internal_trace_group: can be None to only host the link (child) to the next leaf (trace action_potential_group here) or composite (only link/child or a trace action_potential_group)
+            internal_trace_group: can be None to only host the link (child) to the next inner_experiment (trace action_potential_group here) or composite (only link/child or a trace action_potential_group)
             name:
         """
         self._goal = goal

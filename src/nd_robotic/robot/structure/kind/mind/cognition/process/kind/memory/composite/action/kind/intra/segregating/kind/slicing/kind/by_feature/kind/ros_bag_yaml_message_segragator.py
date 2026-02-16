@@ -31,7 +31,7 @@ from nd_utility.os.file_system.path.path import Path
 
 class RosBagYamlMessageSegragating(FeatureSlicer, TraceAddValueSubscriber, GroupRamValuesAdditionFinishedSubscriber):
     """
-    Represents the modality action_potential_group for one event_specific_knowledge
+    Represents the modality action_potential_group for one event_specific_knowledge_forcasting_model_config
     """
 
     def __init__(self, source_memory_component: MemoryComponent, slc: slice):

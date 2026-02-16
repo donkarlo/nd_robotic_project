@@ -12,7 +12,7 @@ class Composite(MemoryComponent, BaseComposite):
         """
 
         Args:
-            internal_trace_group: can be None to only host the link (child) to the next leaf (trace action_potential_group here) or composite (only link/child or a trace action_potential_group)
+            internal_trace_group: can be None to only host the link (child) to the next inner_experiment (trace action_potential_group here) or composite (only link/child or a trace action_potential_group)
             name:
         """
         MemoryComponent.__init__(self, name)
@@ -32,7 +32,7 @@ class Composite(MemoryComponent, BaseComposite):
     def create_directory_structure(self, root_path:Path, leaf_file_extension: str) -> None:
         """
         For each Composite: create a directory named after the composite under `root_path`.
-        For each GoalGain: create a file named `leaf.get_name() + leaf_file_extension` inside its parent directory.
+        For each GoalGain: create a file named `inner_experiment.get_name() + leaf_file_extension` inside its parent directory.
         This proceeds recursively for nested composites.
         Existing directories/files are left intact.
         Notes:

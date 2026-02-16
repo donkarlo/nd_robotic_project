@@ -1,6 +1,6 @@
 class RepetitionPriming(object):
     """
-    facilating perception based on previous experiment
+    facilating perception based on previous inner_experiment
     """
     def __init__(self):
         """

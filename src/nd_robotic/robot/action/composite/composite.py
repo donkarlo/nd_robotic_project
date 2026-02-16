@@ -8,7 +8,7 @@ class Composite(ActionComponent, BaseComposite):
     """
     - is a flat set of actions in composite tree
     Composite is a set of actions to be taken to achieve a initial_mission
-    - This class is created beacause in a scenario we might have two different plans that can acomplish the same initial_mission
+    - This class is created beacause in a inner_experiment we might have two different plans that can acomplish the same initial_mission
     - https://en.wikipedia.org/wiki/Goal_setting
         - GoalGain setting involves the development of an action initial_plan designed in order to motivate and guide a person or action_potential_group toward a composite_goal
     """

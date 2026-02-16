@@ -16,7 +16,7 @@ class Acceptance(ABC):
         Args:
             prior: such as prior in Bayesian
             descripency_class: such as Kullback-Leibler divergence
-            threshold: Can be achieved by tarining with normal scenario and then test it with normal scenario and then abverage ±
+            threshold: Can be achieved by tarining with normal inner_experiment and then test it with normal inner_experiment and then abverage ±
         """
         self._threshold = threshold
         self._discrepancy_method = discrepancy_method

@@ -6,7 +6,7 @@ from nd_robotic.robot.goal.acceptance.kind.suprise.suprise import Suprise as Sup
 from nd_utility.oop.inheritance.overriding.override_from import override_from
 
 
-class SupriseReducing(Action):
+class SupriseReducingAction(Action):
     """
     Mental action:
         Reduce suprise either by
@@ -19,7 +19,7 @@ class SupriseReducing(Action):
         acceptance_threshold = 0.5
         discrepancy_method = KullbackLeiblerDivergence()
         acceptance = SupriseAcceptance(discrepancy_method)
-        goal = SupriseReducing(acceptance)
+        goal = SupriseReducingAction(acceptance)
         Action.__init__(self, goal)
 
     @override_from(Action)
