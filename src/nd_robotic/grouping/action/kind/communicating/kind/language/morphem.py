@@ -1,2 +1,0 @@
-class Morphem:
-    pass
