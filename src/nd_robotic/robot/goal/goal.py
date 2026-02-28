@@ -1,7 +1,6 @@
 from nd_robotic.robot.goal.acceptance.acceptance import Acceptance
 from nd_robotic.robot.goal.composite.component import Component as ComponentGoal
-from nd_robotic.robot.state.state import State
-from nd_utility.oop.design_pattern.structural.composite.leaf import Leaf as BaseLeaf
+from nd_utility.oop.design_pattern.structural.composition.leaf import Leaf as BaseLeaf
 from nd_robotic.robot.state.state import State
 
 

@@ -1,0 +1,2 @@
+class Nerve:
+    pass

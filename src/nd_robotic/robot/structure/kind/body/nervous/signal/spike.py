@@ -1,1 +1,0 @@
-"""the __name for smallest signal either a process_control one from brain to hand or a sensory one from skin to brain"""

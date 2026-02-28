@@ -43,15 +43,15 @@ torsion_indices = np.linspace(0, len(t) - 1, num_torsion_points, dtype=int)
 drone_index = 350  # Arbitrary index for drone placement
 drone_x, drone_y, drone_z = x[drone_index], y[drone_index], z[drone_index]
 
-# Define quadcopter arm by_length
+# Define quadcopter change_arming_mode by_length
 arm_length = 0.2
 
-# Define rotor positions around the quadcopter center
+# Define rotor_composite positions around the quadcopter center
 rotor_positions = np.array([
-    [drone_x + arm_length, drone_y, drone_z],  # Front-right rotor
-    [drone_x - arm_length, drone_y, drone_z],  # Back-left rotor
-    [drone_x, drone_y + arm_length, drone_z],  # Front-left rotor
-    [drone_x, drone_y - arm_length, drone_z]  # Back-right rotor
+    [drone_x + arm_length, drone_y, drone_z],  # Front-right rotor_composite
+    [drone_x - arm_length, drone_y, drone_z],  # Back-left rotor_composite
+    [drone_x, drone_y + arm_length, drone_z],  # Front-left rotor_composite
+    [drone_x, drone_y - arm_length, drone_z]  # Back-right rotor_composite
 ])
 
 # Create a 3D plot

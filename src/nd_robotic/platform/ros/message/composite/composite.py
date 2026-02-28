@@ -13,7 +13,7 @@ class Composite(Component):
         """
 
         Args:
-            child: is either a Message or Composite
+            child: is either a Message or RotorComposite
 
         Returns:
 

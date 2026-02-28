@@ -6,7 +6,7 @@ from nd_robotic.platform.ros.message.kind.header.time_stamp import TimeStamp
 from nd_utility.data.kind.dic.dic import Dic
 from nd_robotic.robot.robot import Observation as LidarObservation
 from typing import List
-from nd_robotic.robot.structure.kind.mind.cognition.process.kind.memory.composite.trace.trace import Trace as Trace
+from nd_robotic.robot.composition.component.kind.mind.cognition.process.kind.memory.composite.trace.trace import Trace as Trace
 
 
 class Scan(Message):

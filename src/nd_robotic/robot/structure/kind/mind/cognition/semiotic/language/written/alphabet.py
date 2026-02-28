@@ -1,2 +1,0 @@
-class Alphabet(Signal):
-    pass

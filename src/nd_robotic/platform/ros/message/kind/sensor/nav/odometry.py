@@ -9,7 +9,7 @@ from nd_physics.quantity.kind.dynamic.kinematic.twist.linear import Linear
 from nd_physics.quantity.kind.dynamic.kinematic.twist.twist import Twist
 from nd_robotic.robot.robot import Timed
 from nd_robotic.robot.robot import GaussianedQuaternionKinematic
-from nd_robotic.robot.structure.kind.mind.cognition.process.kind.memory.composite.trace.trace import Trace
+from nd_robotic.robot.composition.component.kind.mind.cognition.process.kind.memory.composite.trace.trace import Trace
 from nd_robotic.platform.ros.message.field.field import Field
 from nd_robotic.platform.ros.message.message import Message
 from nd_robotic.platform.ros.message.kind.header.time_stamp import TimeStamp

@@ -9,12 +9,12 @@ def draw_perspective_drone_no_shadow_lines(ax, drone_x, drone_y, size=1.5, shado
     Draws a 2D drone with perspective, keeping connecting lines in their correct locations,
     while ensuring shadowed rotors remain but NO shadow for the connecting lines.
     """
-    # Define rotor positions with reversed perspective (bottom rotors larger, top rotors smaller)
+    # Define rotor_composite positions with reversed perspective (bottom rotors larger, top rotors smaller)
     rotor_positions = [
-        (drone_x - size, drone_y - size * 0.6, size * 1.6, 0.8),  # Bottom-left rotor (closer, much larger)
-        (drone_x + size, drone_y - size * 0.6, size * 1.6, 0.8),  # Bottom-right rotor (closer, much larger)
-        (drone_x - size * 0.8, drone_y + size * 0.6, size * 1.2, 0.6),  # Top-left rotor (further, still larger)
-        (drone_x + size * 0.8, drone_y + size * 0.6, size * 1.2, 0.6)  # Top-right rotor (further, still larger)
+        (drone_x - size, drone_y - size * 0.6, size * 1.6, 0.8),  # Bottom-left rotor_composite (closer, much larger)
+        (drone_x + size, drone_y - size * 0.6, size * 1.6, 0.8),  # Bottom-right rotor_composite (closer, much larger)
+        (drone_x - size * 0.8, drone_y + size * 0.6, size * 1.2, 0.6),  # Top-left rotor_composite (further, still larger)
+        (drone_x + size * 0.8, drone_y + size * 0.6, size * 1.2, 0.6)  # Top-right rotor_composite (further, still larger)
     ]
 
     # Connect diagonal rotors (counter-opposite) with only MAIN thick lines (no shadow lines)

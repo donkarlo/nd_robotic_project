@@ -1,2 +1,2 @@
-class Robotic:
+class NdRobotic:
     pass

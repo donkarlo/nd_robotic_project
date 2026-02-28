@@ -1,2 +1,0 @@
-class Command(Kind):
-    pass

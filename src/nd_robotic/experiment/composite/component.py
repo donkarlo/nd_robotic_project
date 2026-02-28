@@ -1,4 +1,4 @@
-from nd_utility.oop.design_pattern.structural.composite.component import Component as BaseComponent
+from nd_utility.oop.design_pattern.structural.composition.component import Component as BaseComponent
 from typing import Optional
 
 class Component(BaseComponent):

@@ -8,7 +8,7 @@ class Field:
         Args:
             name:
             value:
-            kind:
+            composition:
         """
         self._name = name
         self._value = value

@@ -1,53 +1,52 @@
 from abc import ABC
 from typing import Optional
 
+
+from nd_robotic.robot.composition.component.kind.body.body import Body
+from nd_robotic.robot.composition.component.kind.mind.mind import Mind
+from nd_robotic.robot.composition.composite import Composite as RobotCompositUnit
 from nd_robotic.robot.goal.composite.component import Component as ComponentGoal
 from nd_robotic.robot.goal.composite.composite import Composite as CompositeGoal
-from nd_robotic.robot.goal.kind.suprise_poise.suprise_poise import SuprisePoise
-from nd_robotic.robot.structure.kind.mind.cognition.process.kind.memory.composite.trace.group.group import Group as TraceGroup
-from nd_robotic.robot.structure.structure import Structure
+from nd_robotic.robot.goal.kind.suprise_poise.suprise_poise import SurprisePoise
+from nd_robotic.robot.composition.component.kind.mind.cognition.process.kind.memory.composite.trace.group.group import Group as TraceGroup
+from nd_robotic.robot.composition.structure.structure import Structure
 from nd_utility.os.file_system.directory.directory import Directory
+from nd_robotic.robot.composition.component.kind.mind.cognition.process.kind.thinking.decision_making.planning.planning import \
+    Planning
 
 
-class Robot(ABC):
+
+class Robot(RobotCompositUnit, ABC):
     """
     A robot is a singletone that is acceptable for comunication therough the structure
+    Each robot is an intersection between mind and body, it relates a Group of ActionPotential Group (NeuralCoding) to a trace group formatted data
     """
-    _instance = None
 
-    def __new__(cls, structure:Structure, *args, **kwargs):
+    def __init__(self):
         """
-        dont assign a name in args, a born baby doent know its name
+        dont assign a title in args, a born baby doent know its title
         Args:
             structure:
         """
-        if cls._instance is None:
-            cls._instance = super().__new__(cls)
-            cls._instance._initialize(structure)
-        return cls._instance
-
-    def _initialize(self, structure):
-        self._structure = structure
+        RobotCompositUnit.__init__(self)
 
         self._composite_goal = None
         self._composite_action = None
-        self.__name = None
 
-        self.__run()
+        self.add_child(Body())
+        self.add_child(Mind())
+
+
 
     @classmethod
     def init_from_directory(cls, os_directory: Directory):
         # TODO: To be completed
-        structure = Structure()
-        return cls(structure)
-
-    def get_structure(self) -> Structure:
-        return self._structure
+        return cls(os_directory)
 
     def set_name(self, name: str) -> None:
         """
         usually called in a population of robots
-        a robot, on its birth doesnt name, but it should get the information as the structure
+        a robot, on its birth doesnt title, but it should get the information as the structure
         Args:
             name:
 
@@ -61,12 +60,12 @@ class Robot(ABC):
 
     def get_name(self) -> Optional[str]:
         if self.__name is None:
-            raise ValueError("name was never set. This robt is nameless. Call set_name() first")
+            raise ValueError("title was never set. This robt is nameless. Call set_name() first")
         return self.__name
 
     def attach_goal(self, parent_goal: CompositeGoal, goal: ComponentGoal) -> None:
         """
-        We can just attach goals and not actions. Planning in mind>process>thinking>decision making  makes a composite action
+        We can just attach goals and not actions. Planning in mind>process>thinking>decision making  makes a composition action
         Args:
             parent_goal:
             goal:
@@ -79,12 +78,11 @@ class Robot(ABC):
     def handle_request(self, trace_group: TraceGroup):
         ...
 
-    def __run(self):
-        from nd_robotic.robot.structure.kind.mind.cognition.process.kind.thinking.decision_making.planning.planning import \
-            Planning
+    def run(self):
+
 
         # All goals must be attached to this one so that teh robot decides the priority between them
-        suprise_poise_goal = SuprisePoise()
+        suprise_poise_goal = SurprisePoise()
 
         self._composite_goal = CompositeGoal(suprise_poise_goal, None)
         planner = Planning(self._composite_goal)

@@ -26,15 +26,15 @@ z_tunnel = t_mesh + tunnel_radius * np.sin(theta_mesh)
 quad_index = 150  # Midpoint of the spiral
 quad_x, quad_y, quad_z = x[quad_index], y[quad_index], z[quad_index]
 
-# Define quadcopter arm by_length
+# Define quadcopter change_arming_mode by_length
 arm_length = 0.8
 
-# Define rotor positions around the quadcopter center
+# Define rotor_composite positions around the quadcopter center
 rotor_positions = np.array([
-    [quad_x + arm_length, quad_y, quad_z],  # Front-right rotor
-    [quad_x - arm_length, quad_y, quad_z],  # Back-left rotor
-    [quad_x, quad_y + arm_length, quad_z],  # Front-left rotor
-    [quad_x, quad_y - arm_length, quad_z]   # Back-right rotor
+    [quad_x + arm_length, quad_y, quad_z],  # Front-right rotor_composite
+    [quad_x - arm_length, quad_y, quad_z],  # Back-left rotor_composite
+    [quad_x, quad_y + arm_length, quad_z],  # Front-left rotor_composite
+    [quad_x, quad_y - arm_length, quad_z]   # Back-right rotor_composite
 ])
 
 # Create a 3D plot

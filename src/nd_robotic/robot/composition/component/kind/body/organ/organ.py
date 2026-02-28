@@ -1,0 +1,2 @@
+class Organ:
+    pass

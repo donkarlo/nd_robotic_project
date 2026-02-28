@@ -17,3 +17,6 @@ The project is further based on the axiom that any action—whether mental or ph
 by the collective inevitably incurs energetic cost and structural wear. Consequently, the ongoing responsibility of each
 agent, whether biological or artificial, is to minimize surprise (i.e., free energy) while compensating for energy loss
 and environmental perturbations.
+
+# Human reminder as a part of planning module
+By extending this project you can give the tasks you expect to do by date and timke and if you use linux it can remind you by reading them to you

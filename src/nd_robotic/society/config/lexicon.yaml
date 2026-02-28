@@ -1,0 +1,13 @@
+trace:
+  - "role"
+  - lidar:
+    - "ranges"
+  - odometry:
+      - "kinematic"
+
+sensor:
+  modality:
+    human:
+      command:
+        remeber:
+          - "event_specific_knowledge_forcasting_model_config"
