@@ -1,12 +1,12 @@
-from nd_robotic_ai.robot.parts.mind.parts.cognition.parts.object_level.process.parts.memory.composition.leaf.leaf import Timed as TimedTrace
+from nd_robotic_ai.robot.part.mind.part.cognition.part.object_level.process.part.memory.composition.leaf.leaf import Timed as TimedTrace
 from nd_robotic_ai.platform.ros.message.field.field import Field
 from nd_robotic_ai.platform.ros.message.message import Message
 from nd_robotic_ai.platform.ros.message.kind.header.time_stamp import TimeStamp
-from nd_robotic_ai.robot.parts.mind.parts.cognition.parts.object_level.process.parts.memory.composition.leaf.leaf import \
+from nd_robotic_ai.robot.part.mind.part.cognition.part.object_level.process.part.memory.composition.leaf.leaf import \
     LidarScanRanges
 
-from nd_robotic_ai.robot.parts.body.parts.nervous_system.parts.neuron.kinds.sensory.kinds.lidar.observation import observation as LidarObservation
-from nd_robotic_ai.robot.parts.mind.parts.cognition.parts.object_level.process.parts.memory.composition.leaf.leaf import \
+from nd_robotic_ai.robot.part.body.part.nervous_system.part.neuron.kind.sensory.kind.lidar.observation import observation as LidarObservation
+from nd_robotic_ai.robot.part.mind.part.cognition.part.object_level.process.part.memory.composition.leaf.leaf import \
     Trace
 from nd_utility.data.kind.dic.dic import Dic
 from typing import List

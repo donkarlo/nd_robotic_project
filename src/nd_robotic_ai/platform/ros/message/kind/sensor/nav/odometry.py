@@ -7,11 +7,11 @@ from nd_physics.quantity.kind.dynamic.kinematic.pose.orientation.quaternion impo
 from nd_physics.quantity.kind.dynamic.kinematic.twist.angular import Angular
 from nd_physics.quantity.kind.dynamic.kinematic.twist.linear import Linear
 from nd_physics.quantity.kind.dynamic.kinematic.twist.twist import Twist
-from nd_robotic_ai.robot.parts.mind.parts.cognition.parts.object_level.process.parts.memory.composition.leaf.leaf import \
+from nd_robotic_ai.robot.part.mind.part.cognition.part.object_level.process.part.memory.composition.leaf.leaf import \
     Timed
-from nd_robotic_ai.robot.parts.mind.parts.cognition.parts.object_level.process.parts.memory.composition.leaf.leaf import \
+from nd_robotic_ai.robot.part.mind.part.cognition.part.object_level.process.part.memory.composition.leaf.leaf import \
     GaussianedQuaternionKinematic
-from nd_robotic_ai.robot.parts.mind.parts.cognition.parts.object_level.process.parts.memory.composition.leaf.leaf import \
+from nd_robotic_ai.robot.part.mind.part.cognition.part.object_level.process.part.memory.composition.leaf.leaf import \
     Trace
 
 

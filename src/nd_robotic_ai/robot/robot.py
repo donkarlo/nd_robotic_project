@@ -1,15 +1,15 @@
 from nd_robotic_ai.robot.composition.composite import Composite as RobotComposite
-from nd_robotic_ai.robot.parts.body.body import Body
-from nd_robotic_ai.robot.parts.body.parts.nervous_system.parts.neuron.kinds.sensory.parts.receptor.receptor import \
+from nd_robotic_ai.robot.part.body.body import Body
+from nd_robotic_ai.robot.part.body.part.nervous_system.part.neuron.kind.sensory.part.receptor.receptor import \
     Receptor
-from nd_robotic_ai.robot.parts.mind.mind import Mind
-from nd_robotic_ai.robot.parts.mind.parts.cognition.parts.object_level.process.parts.perception.perception import \
+from nd_robotic_ai.robot.part.mind.mind import Mind
+from nd_robotic_ai.robot.part.mind.part.cognition.part.object_level.process.part.perception.perception import \
     Perception
-from nd_robotic_ai.robot.parts.mind.parts.cognition.parts.object_level.process.parts.thinking.parts.planning.planning import \
+from nd_robotic_ai.robot.part.mind.part.cognition.part.object_level.process.part.thinking.part.planning.planning import \
     Planning
-from nd_robotic_ai.robot.parts.mind.state.kind.dead.dead import Dead
-from nd_robotic_ai.robot.parts.mind.state.kind.idle.mind_wandering import MindWandering
-from nd_robotic_ai.robot.parts.stimulus.observer.kind.mind_state_change.mind_state_change import MindStateChange
+from nd_robotic_ai.robot.part.mind.state.kind.dead.dead import Dead
+from nd_robotic_ai.robot.part.mind.state.kind.idle.mind_wandering import MindWandering
+from nd_robotic_ai.robot.part.stimulus.observer.kind.mind_state_change.mind_state_change import MindStateChange
 
 
 class Robot(RobotComposite):
